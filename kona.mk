@@ -60,6 +60,10 @@ endif
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-$(VULKAN_DEQP_LEVEL).xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
+# Atrace
+PRODUCT_PACKAGES += \
+    android.hardware.atrace@1.0-service.pixel
+
 # A/B
 ifeq ($(TARGET_IS_VAB),true)
 # Inherit virtual_ab_ota product
