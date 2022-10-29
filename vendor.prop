@@ -197,8 +197,9 @@ persist.backup.ntpServer=0.pool.ntp.org
 # Graphics
 debug.egl.hw=0
 debug.mdpcomp.logs=0
-debug.sf.enable_advanced_sf_phase_offset=1
+debug.sf.disable_backpressure=1
 debug.sf.enable_gl_backpressure=1
+debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
 debug.sf.high_fps_early_phase_offset_ns=-4000000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000
@@ -210,6 +211,11 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 vendor.gralloc.disable_ubwc=0
+vendor.display.use_smooth_motion=0
+debug.sf.disable_client_composition_cache=1
+debug.sf.layer_caching_active_layer_timeout_ms=1000
+ro.config.avoid_gfx_accel=true
+debug.sdm.support_writeback=0
 
 # Keystore
 ro.hardware.keystore_desede=true
