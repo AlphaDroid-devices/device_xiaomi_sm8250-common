@@ -265,6 +265,9 @@ rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.com.android.dataroaming=true
 ro.telephony.default_network=33,33
 
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
 
