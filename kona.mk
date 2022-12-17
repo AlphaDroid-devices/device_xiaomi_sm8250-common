@@ -215,6 +215,11 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     memtrack.kona
 
+# MiSound 
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.audio.misound.disable=false \
+    ro.vendor.audio.misound.bluetooth.enable=true
+
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libdisplayconfig.system.qti \
