@@ -210,7 +210,8 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.display.composer-service
+    vendor.qti.hardware.display.composer-service \
+    vendor.qti.hardware.display.mapperextensions@1.2
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
@@ -222,9 +223,9 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     memtrack.kona
 
-# MiSound 
+# MiSound
 PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.audio.misound.disable=false \
+    persist.vendor.audio.misound.disable=true \
     ro.vendor.audio.misound.bluetooth.enable=true
 
 PRODUCT_PACKAGES += \
