@@ -99,7 +99,7 @@ endif
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # Dex
-PRODUCT_DEXPREOPT_SPEED_APPS += \
+#PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     Settings \
 		Launcher3 \
