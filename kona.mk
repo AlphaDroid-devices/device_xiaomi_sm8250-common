@@ -292,6 +292,12 @@ PRODUCT_PACKAGES += \
 
 TARGET_DISABLE_MEMTRACK := true
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.sf.skip_set_active_mode_when_off=1
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.surface_flinger.set_display_power_timer_ms=3000 \
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
